@@ -9,6 +9,7 @@ import android.widget.RadioGroup;
 import android.widget.ViewSwitcher;
 
 import com.jhj.imageedit.weight.IMGColorGroup;
+import com.jhj.imageedit.weight.IMGView;
 
 /**
  * Created by felix on 2017/12/5 下午3:08.

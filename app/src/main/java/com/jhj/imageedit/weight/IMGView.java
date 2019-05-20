@@ -1,4 +1,4 @@
-package com.jhj.imageedit;
+package com.jhj.imageedit.weight;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
@@ -22,11 +22,14 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.FrameLayout;
 
+import com.jhj.imageedit.IMGImage;
+import com.jhj.imageedit.IMGMode;
+import com.jhj.imageedit.IMGPath;
+import com.jhj.imageedit.IMGText;
 import com.jhj.imageedit.anim.IMGHomingAnimator;
 import com.jhj.imageedit.homing.IMGHoming;
 import com.jhj.imageedit.sticker.IMGSticker;
 import com.jhj.imageedit.sticker.IMGStickerPortrait;
-import com.jhj.imageedit.weight.IMGStickerTextView;
 
 
 /**
