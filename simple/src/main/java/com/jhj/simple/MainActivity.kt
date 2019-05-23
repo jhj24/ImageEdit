@@ -3,6 +3,7 @@ package com.jhj.simple
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import com.jhj.imageedit.IMGEditActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -24,6 +25,17 @@ class MainActivity : Activity() {
             )
         }
 
+        imageEdit.setImagePath("/storage/emulated/0/DCIM/Camera/IMG_20171004_160402.jpg")
+
+        btn_save.setOnClickListener {
+            imageEdit.onSaveBitmap("/storage/emulated/0/DCIM/Camera/22.jpg") {
+                if (it) {
+                    Toast.makeText(this, "编辑成功", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(this, "编辑失败", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
